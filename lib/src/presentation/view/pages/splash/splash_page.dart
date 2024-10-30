@@ -37,7 +37,8 @@ class _SplashPageState extends State<SplashPage> with SingleTickerProviderStateM
 
     Future.delayed(
       Durations.extralong4 * 4,
-      () {
+      () async{
+        // await injector<StorageService>().clear();
         injector<StorageService>().getString(kUserData).then(
           (value) {
             if (value != null) {
