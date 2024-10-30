@@ -50,10 +50,10 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `CIMIP Test`
+  /// `MICIT Test`
   String get app_name {
     return Intl.message(
-      'CIMIP Test',
+      'MICIT Test',
       name: 'app_name',
       desc: '',
       args: [],

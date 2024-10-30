@@ -22,7 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "app_name": MessageLookupByLibrary.simpleMessage("CIMIP Test"),
+        "app_name": MessageLookupByLibrary.simpleMessage("MICIT Test"),
         "bad_certificate_message": MessageLookupByLibrary.simpleMessage(
             "Certificate verification failed. Please make sure you\'re connected to a secure network and try again"),
         "bad_gateway_502_message": MessageLookupByLibrary.simpleMessage(
