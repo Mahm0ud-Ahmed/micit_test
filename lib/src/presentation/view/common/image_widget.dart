@@ -58,8 +58,8 @@ class ImageWidget extends StatelessWidget {
         imageUrl: url!,
         width: width,
         height: height,
-        placeholder: (context, url) => const Icon(FontAwesomeIcons.clapperboard, color: kSecondaryColor),
-        errorWidget: (context, url, error) => const Icon(FontAwesomeIcons.clapperboard, color: kSecondaryColor));
+        placeholder: (context, url) => const Icon(FontAwesomeIcons.circleUser, color: kSecondaryColor),
+        errorWidget: (context, url, error) => const Icon(FontAwesomeIcons.circleUser, color: kTextSubColor));
   }
 
   Widget _buildImageAsset(String? asset) {
@@ -68,6 +68,7 @@ class ImageWidget extends StatelessWidget {
       fit: fit,
       width: width,
       height: height,
+      errorBuilder: (context, error, stackTrace) => const Icon(FontAwesomeIcons.circleUser, color: kTextSubColor),
     );
   }
 }
