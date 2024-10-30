@@ -40,12 +40,11 @@ class _SplashPageState extends State<SplashPage> with SingleTickerProviderStateM
       () {
         injector<StorageService>().getString(kUserData).then(
           (value) {
-            Navigator.pushReplacementNamed(context, AppLocalRoute.home.route);
-            // if (value != null) {
-            //   Navigator.pushReplacementNamed(context, AppLocalRoute.home.route);
-            // } else {
-            //   Navigator.pushReplacementNamed(context, AppLocalRoute.login.route);
-            // }
+            if (value != null) {
+              Navigator.pushReplacementNamed(context, AppLocalRoute.home.route);
+            } else {
+              Navigator.pushReplacementNamed(context, AppLocalRoute.login.route);
+            }
           },
         );
       },
