@@ -3,7 +3,6 @@
 ## Screenshots
 
 ### Viedo
-
 https://github.com/user-attachments/assets/d605d239-9845-487e-be04-3f9ee45749d2
 
 ### Images
